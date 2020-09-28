@@ -48,11 +48,11 @@ const insertDataIoT = async (data) =>{
                 }
                 else
                 {
-                    //console.log("insert complete");
-                    res.status(200).json({
-                        status : "success",
-                        data : ""
-                    });
+                    console.log("insert complete");
+                    // res.status(200).json({
+                    //     status : "success",
+                    //     data : ""
+                    // });
 
                 }
             });
