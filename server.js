@@ -1,6 +1,6 @@
 var net = require('net');
 var allFunc = require('./functions');
-var port = 100 ;
+var port = 1000 ;
 
 var server = net.createServer();
 
@@ -40,5 +40,5 @@ server.on("connection", function(socket){
 });
 
 server.listen(port, function() {
-    console.log('server listening port 100');
+    console.log('server listening port '+port);
 });
