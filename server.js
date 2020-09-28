@@ -32,10 +32,10 @@ server.on("connection", function(socket){
     })
 
     socket.once("close" , function(){
-        //console.log("Connection from %s closed", remoteAddress);
+        console.log("Connection from %s closed", remoteAddress);
     });
     socket.on("error" , function(){
-        //console.log("Connection %s error : %s" , remoteAddress);
+        console.log("Connection %s error : %s" , remoteAddress);
     });
 });
 
