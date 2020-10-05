@@ -69,11 +69,16 @@ const insertDataIoT = async (data) =>{
 }
 
 const insertDataInLog = async (data) =>{
-    fs.writeFile('./log/logInsert.txt',data,(err) => {
+    // fs.writeFile('./log/logInsert.txt',data,(err) => {
 
-        if(err) throw err;
+    //     if(err) throw err;
 
-        console.log('Lyric saved!');
+    //     console.log('Lyric saved!');
+    // });
+
+    fs.appendFile('./log/logInsert.txt', '\n'+data, (err) => {
+        if (err) throw err;
+        console.log('The lyrics were updated!');
     });
 }
 
