@@ -1,6 +1,8 @@
 const axios = require('axios');
 const MongoClient  = require('mongodb').MongoClient ;
 const { Double } = require("mongodb");
+const fs = require('fs');
+
 
 require('dotenv').config()
 
@@ -66,6 +68,16 @@ const insertDataIoT = async (data) =>{
     }
 }
 
+const insertDataInLog = async (data) =>{
+    fs.writeFile('./log/logInsert.txt',data,(err) => {
+
+        if(err) throw err;
+
+        console.log('Lyric saved!');
+    });
+}
+
 module.exports = {
-    insertDataIoT
+    insertDataIoT,
+    insertDataInLog
 }

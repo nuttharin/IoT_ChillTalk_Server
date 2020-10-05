@@ -26,7 +26,8 @@ server.on("connection", function(socket){
 
         if(data != null || data != null )
         {         
-            allFunc.insertDataIoT(data);            
+            allFunc.insertDataIoT(data);    
+            allFunc.insertDataInLog(data);        
         }
       
     })
