@@ -13,12 +13,17 @@ const api_iot = process.env.API_IOT ;
 const insertDataIoT = async (data) =>{
     try
     {
-        let dataiot = data.toString('utf-8').split('/');        
+        //let dataiot = data.toString('utf-8').split('/');       
+        let dataiot = data.toString('utf-8').split('\n');
+        dataiot = dataiot[0].split(' ')[1].split('/');
+        console.log(dataiot);
+
         //console.log(data)
         let dataInsert = {
-            serialNumber : dataiot[0],
-            pressure : dataiot[3],           
+            serialNumber : dataiot[1],
+            pressure : dataiot[4],           
         };
+
         // axios({
         //     method: 'post',
         //     url: api_iot + '/gas/post/collectPressureIoT',
@@ -76,7 +81,7 @@ const insertDataInLog = async (data) =>{
     //     console.log('Lyric saved!');
     // });
 
-    fs.appendFile('./log/logInsert.txt', '\n'+data + "       " + (new Date).toString() , (err) => {
+    fs.appendFile('./log/logInsert.txt', '\n'+data + "        " + (new Date).toString() , (err) => {
         if (err) throw err;
         console.log('The lyrics were updated!');
     });

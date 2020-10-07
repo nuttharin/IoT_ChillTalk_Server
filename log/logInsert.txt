@@ -2,3 +2,84 @@ A11111111/16-9-2020/09.30/22.00
 A11111111/16-9-2020/09.30/22.00
 A11111111/16-9-2020/09.30/22.01
 A11111111/16-9-2020/09.30/22.01 Mon Oct 05 2020 10:48:40 GMT+0700 (Indochina Time)
+A11111111/16-9-2020/09.30/22.01        Wed Oct 07 2020 10:36:41 GMT+0700 (Indochina Time)
+GET /JOB109001/05-10-2020/15:42/108.6732 HTTP/1.1
+Host: 202.44.235.51:1000
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+Connection: keep-alive        Wed Oct 07 2020 10:37:41 GMT+0700 (Indochina Time)
+GET /JOB109001/05-10-2020/15:42/108.6732 HTTP/1.1
+Host: 202.44.235.51:1000
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+Connection: keep-alive        Wed Oct 07 2020 10:40:41 GMT+0700 (Indochina Time)
+GET /JOB109001/05-10-2020/15:42/108.6732 HTTP/1.1
+Host: 202.44.235.51:1000
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+Connection: keep-alive        Wed Oct 07 2020 10:43:49 GMT+0700 (Indochina Time)
+GET /JOB109001/05-10-2020/15:42/108.6732 HTTP/1.1
+Host: 202.44.235.51:1000
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+Connection: keep-alive        Wed Oct 07 2020 10:44:15 GMT+0700 (Indochina Time)
+GET /JOB109001/05-10-2020/15:42/108.6732 HTTP/1.1
+Host: 202.44.235.51:1000
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+Connection: keep-alive        Wed Oct 07 2020 10:45:05 GMT+0700 (Indochina Time)
+GET /JOB109001/05-10-2020/15:42/108.6732 HTTP/1.1
+Host: 202.44.235.51:1000
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+Connection: keep-alive        Wed Oct 07 2020 10:45:15 GMT+0700 (Indochina Time)
+GET /JOB109001/05-10-2020/15:42/108.6732 HTTP/1.1
+Host: 202.44.235.51:1000
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+Connection: keep-alive        Wed Oct 07 2020 10:45:36 GMT+0700 (Indochina Time)
+GET /JOB109001/05-10-2020/15:42/108.6732 HTTP/1.1
+Host: 202.44.235.51:1000
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+Connection: keep-alive        Wed Oct 07 2020 10:46:26 GMT+0700 (Indochina Time)
+GET /JOB109001/05-10-2020/15:42/108.6732 HTTP/1.1
+Host: 202.44.235.51:1000
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+Connection: keep-alive        Wed Oct 07 2020 10:46:37 GMT+0700 (Indochina Time)
+GET /JOB109001/05-10-2020/15:42/108.6732 HTTP/1.1
+Host: 202.44.235.51:1000
+Upgrade-Insecure-Requests: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+Connection: keep-alive        Wed Oct 07 2020 10:49:33 GMT+0700 (Indochina Time)
