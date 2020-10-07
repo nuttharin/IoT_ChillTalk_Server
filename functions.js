@@ -17,11 +17,11 @@ const insertDataIoT = async (data) =>{
         // if(data.toString('utf-8').split('\n')[0])
         // {
 
-        // } 
-        console.log(data.toString('utf-8'))
-        console.log(data.toString('utf-8').split('\n'))  
-        console.log(data.toString('utf-8').split('\n')[0].split(' '))
-        console.log(data.toString('utf-8').split('\n')[0].split(' ')[1].split('/'))
+        // // } 
+        // console.log(data.toString('utf-8'))
+        // console.log(data.toString('utf-8').split('\n'))  
+        // console.log(data.toString('utf-8').split('\n')[0].split(' '))
+        // console.log(data.toString('utf-8').split('\n')[0].split(' ')[1].split('/'))
         var arraycontainsturtles = await arrayContains(data.toString('utf-8').split('\n'),"\u0003") ;
         console.log(arraycontainsturtles);
 
