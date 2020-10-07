@@ -80,8 +80,9 @@ const insertDataInLog = async (data) =>{
 
     //     console.log('Lyric saved!');
     // });
-
-    fs.appendFile('./log/logInsert.txt', '\n'+data + "        " + (new Date).toString() , (err) => {
+    let d = new Date();
+    let nameFile = 'logInsert'+d.getDate()+"-"+d.getMonth()	+"-"+d.getFullYear()+".txt"
+    fs.appendFile('./log/'+nameFile, '\n'+data + "        " + (new Date).toString() , (err) => {
         if (err) throw err;
         console.log('The lyrics were updated!');
     });
