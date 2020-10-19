@@ -2,6 +2,7 @@ const axios = require('axios');
 const MongoClient  = require('mongodb').MongoClient ;
 const { Double } = require("mongodb");
 const fs = require('fs');
+const { networkInterfaces } = require('os');
 
 
 require('dotenv').config()
@@ -42,8 +43,8 @@ const insertDataIoT = async (data) =>{
                 pressure : dataiot[4],           
             };
             let newDate = new Date();  
-            newDate.setHours(newDate.getHours+7);
-            console.log(data);
+            newDate.setHours(newDate.getHours()+7);
+            console.log(newDate);
             MongoClient.connect(URL_MONGODB_IOT,function(err,db){
                 let dbo = db.db(process.env.DATABASE_DATA_IOT);
 
