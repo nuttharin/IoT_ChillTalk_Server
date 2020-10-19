@@ -13,6 +13,7 @@ const api_iot = process.env.API_IOT ;
 const insertDataIoT = async (data) =>{
     try
     {
+        // A11111111/16-9-2020/09.30/23.00
         //let dataiot = data.toString('utf-8').split('/'); 
         // if(data.toString('utf-8').split('\n')[0])
         // {
@@ -41,6 +42,7 @@ const insertDataIoT = async (data) =>{
                 pressure : dataiot[4],           
             };
             let newDate = new Date();  
+            newDate.setHours(newDate.getHours+7);
             console.log(data);
             MongoClient.connect(URL_MONGODB_IOT,function(err,db){
                 let dbo = db.db(process.env.DATABASE_DATA_IOT);
@@ -99,14 +101,9 @@ const insertDataIoT = async (data) =>{
 }
 
 const insertDataInLog = async (data) =>{
-    // fs.writeFile('./log/logInsert.txt',data,(err) => {
-
-    //     if(err) throw err;
-
-    //     console.log('Lyric saved!');
-    // });
+    
     let d = new Date();
-    let nameFile = 'logInsert'+d.getDate()+"-"+d.getMonth()	+"-"+d.getFullYear()+".txt"
+    let nameFile = 'logInsert'+d.getDate()+"-"+d.getMonth()+1	+"-"+d.getFullYear()+".txt"
     fs.appendFile('./log/'+nameFile, '\n'+data + "        " + (new Date).toString() , (err) => {
         if (err) throw err;
         console.log('insert log');
