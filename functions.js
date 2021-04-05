@@ -20,7 +20,7 @@ const insertDataIoT = async (data) =>{
         // {
 
         // // } 
-        console.log(data.toString('utf-8').split('\n'))
+        console.log(data.toString('utf-8'))
         // console.log(data.toString('utf-8').split('\n'))  
         // console.log(data.toString('utf-8').split('\n')[0].split(' '))
         // console.log(data.toString('utf-8').split('\n')[0].split(' ')[1].split('/'))
