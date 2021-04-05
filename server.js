@@ -21,7 +21,8 @@ server.on("connection", function(socket){
         // ส่ง ผ่าน 3G  ไปที่ web host เป็น txt    เข้าไปที่ IoT server
         // ไฟเลี้ยง ใช่ แบต ลิเธียม 3.7 v bootup 5.5 volt จ่ายตัว sensor ชาร์จเจอร์ 5V
 
-        //console.log("Data from %s : %s", remoteAddress,data);
+        console.log("Data from %s : %s", remoteAddress,data);
+        console.log(data.toString())
         var buffer = Buffer.from(data);
 
         if(data != null || data != null )
