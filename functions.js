@@ -24,6 +24,8 @@ const insertDataIoT = async (data) =>{
         // console.log(data.toString('utf-8').split('\n'))  
         // console.log(data.toString('utf-8').split('\n')[0].split(' '))
         // console.log(data.toString('utf-8').split('\n')[0].split(' ')[1].split('/'))
+        console.log(data)
+        console.log(arraycontainsturtles);
         var arraycontainsturtles = await arrayContains(data.toString('utf-8').split('\n'),"\u0003") ;
         console.log(arraycontainsturtles);
 
