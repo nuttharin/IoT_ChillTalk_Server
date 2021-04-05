@@ -1,0 +1,13 @@
+
+POST /GASIOT000001/26-10-2020/00.07/4.2 HTTP/1.1
+Host: 202.44.235.51:1000
+Accept: */*
+Transfer-Encoding: chunked
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue        Mon Apr 05 2021 15:09:58 GMT+0700 (Indochina Time)
+POST /GASIOT000001/26-10-2020/00.07/4.2 HTTP/1.1
+Host: 202.44.235.51:1000
+Accept: */*
+Transfer-Encoding: chunked
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue        Mon Apr 05 2021 15:16:49 GMT+0700 (Indochina Time)

@@ -50,7 +50,7 @@ const insertDataIoT = async (data) =>{
             MongoClient.connect(URL_MONGODB_IOT,function(err,db){
                 let dbo = db.db(process.env.DATABASE_DATA_IOT);
 
-                dbo.collection("tb_test")
+                dbo.collection("tb_gasDataIoT")
                 .insertOne( { 
                     serialNumber : dataInsert.serialNumber, pressure : Double(dataInsert.pressure), dateTime : newDate 
                 } ,(err,result) =>
