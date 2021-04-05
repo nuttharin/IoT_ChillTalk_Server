@@ -4,7 +4,8 @@ const { Double } = require("mongodb");
 const fs = require('fs');
 const { networkInterfaces } = require('os');
 
-
+let dataInsert ;
+let dataiot;
 require('dotenv').config()
 
 const URL_MONGODB_IOT = process.env.URL_MONGODB +process.env.DATABASE_DATA_IOT ;
@@ -14,6 +15,7 @@ const api_iot = process.env.API_IOT ;
 const insertDataIoT = async (data) =>{
     try
     {
+        let newDate = new Date();
         // A11111111/16-9-2020/09.30/23.00
         //let dataiot = data.toString('utf-8').split('/'); 
         // if(data.toString('utf-8').split('\n')[0])
@@ -28,6 +30,25 @@ const insertDataIoT = async (data) =>{
         //console.log(arraycontainsturtles);
         //var arraycontainsturtles = await arrayContains(data.toString('utf-8').split('\n'),"\u0003") ;
         //console.log(arraycontainsturtles);
+        MongoClient.connect(URL_MONGODB_IOT,function(err,db){
+            let dbo = db.db(process.env.DATABASE_DATA_IOT);
+
+            dbo.collection("tb_gasDataIoT0")
+            .insertOne( { 
+                data : data.toString('utf-8')  
+            } ,(err,result) =>
+            {
+                if(err)
+                {
+                    console.log("error")
+                    throw err;
+                }
+                else
+                {
+                    console.log("insert complete");
+                }
+            });
+        }); 
 
         if(
             (data.toString('utf-8').split('\n')[0].split(' ')[1].split('/').length > 2)
@@ -36,15 +57,15 @@ const insertDataIoT = async (data) =>{
              && arrayContains(data.toString('utf-8').split('\n'),"\u0000")
         )
         {
-            let dataiot = data.toString('utf-8').split('\n');
+            dataiot = data.toString('utf-8').split('\n');
             dataiot = dataiot[0].split(' ')[1].split('/');
             // console.log(dataiot);
             //console.log(data)
-            let dataInsert = {
+            dataInsert = {
                 serialNumber : dataiot[1],
                 pressure : dataiot[4],           
             };
-            let newDate = new Date();  
+              
             newDate.setHours(newDate.getHours()+7);
             console.log(newDate);
             MongoClient.connect(URL_MONGODB_IOT,function(err,db){
@@ -63,11 +84,6 @@ const insertDataIoT = async (data) =>{
                     else
                     {
                         console.log("insert complete");
-                        // res.status(200).json({
-                        //     status : "success",
-                        //     data : ""
-                        // });
-
                     }
                 });
             }); 
